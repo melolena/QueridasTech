@@ -1,0 +1,124 @@
+:root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+body {
+margin: 0;
+padding: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 100%;
+}
+
+.formLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%;
+    position: relative;
+    gap: 20px;
+    max-width: 100%
+    
+  }
+  
+  .formLogin div {
+    width: 100%;
+    max-width: 400px; 
+    margin-bottom: 15px; 
+    
+  }
+  
+  .formLogin input {
+    width: 100%;
+    background-color: #eeeeee;
+    color: black;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    padding-right: 40px;
+    font-size: clamp(1rem, 0.9vw, 0.5rem);
+    padding: 0 10px;
+    max-width: 400px;
+  }
+  
+
+
+.formLogin a {
+    position: absolute;
+    right: 14rem;
+    top: 39%;
+    transform: translateY(-2%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+.formLogin img {
+    max-width: 20px;
+    background-color: none;
+}
+
+.formLogin button {
+  width: 100%; 
+  max-width: 400px; 
+  background-color: #180001;
+  color: white;
+  font-size: clamp(1rem, 0.9vw, 0.5rem);
+  padding: 15px 0px 15px 0; 
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-left: 1rem;
+  
+}
+
+input[type="checkbox"]{
+  background-color: #D9D9D9 ;
+  accent-color: #D9D9D9;
+  border: none;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #D9D9D9;
+  cursor: pointer;
+  height: 1.2rem;
+  width: 1.2rem;
+  position: relative;
+}
+
+.remember{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top:  -30px;
+}
+
+.passwordLost{
+  display: flex;
+  margin-top: 5px;
+}
+
+.passwordLost a{
+  color: black;
+  margin-top: 40px;
+  
+}
+
+button:hover{
+  background-color: #3C0F76;
+  transition: 0.5s ease;
+}
+
+.passwordLost a:hover{
+  color: #3C0F76;
+  transition: 0.5s ease;
+}
