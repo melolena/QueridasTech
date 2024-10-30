@@ -80,27 +80,31 @@ height: 100%;
 
 input[type="checkbox"]{
   background-color: #D9D9D9 ;
-  accent-color: #D9D9D9;
+  accent-color: #3C0F76;
   border: none;
 }
 
 input[type="checkbox"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   background-color: #D9D9D9;
+  accent-color: #3C0F76;
   cursor: pointer;
   height: 1.2rem;
   width: 1.2rem;
-  position: relative;
+  border: none;
 }
 
-.remember{
+custom-checkbox .custom-control-input:active ~ .custom-control-label::before{
+ background-color: #D9D9D9;
+ border: none;
+}
+
+.remember {
   display: flex;
   align-items: center;
   gap: 5px;
-  margin-top:  -30px;
+  margin-top: -30px;
 }
+
 
 .passwordLost{
   display: flex;

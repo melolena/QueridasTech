@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import eyeOpen from '../../assets/eyeOpen.svg';
 import eyeHide from '../../assets/eyeHide.svg';
+import Form from 'react-bootstrap/Form';
 import './loginForm.css';
 
 function LoginForm() {
@@ -46,12 +47,7 @@ function LoginForm() {
       </div>
       <div className="passwordLost">
         <div className="remember">
-        <input
-          type="checkbox"
-          checked={rememberMe}
-          onChange={(e) => setRememberMe(e.target.checked)}
-        />
-        <label>Lembrar senha</label>
+        <Form.Check aria-label="option 1" />
         </div>
         <a href="#">Esqueceu a senha?</a>
       </div>
