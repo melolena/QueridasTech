@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header class="p-3">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="#" class="nav-link px-2 text-white">Início</a></li>
+              <li><a href="#" class="nav-link px-2  ">Explore</a></li>
+              <li><a href="#" class="nav-link px-2 ">Nosso Time</a></li>
+            </ul>
+            <div class="text-end">
+              <button type="button" class="btn me-2 button-nav">Login</button>
+              <button type="button" class="btn  button-nav">Sign-up</button>
+            </div>
+          </div>
+        </div>
+    </header>
+    <div class="body-home">
+        <article class="focus">
+            <div class="body-focus">
+                <div class="logo">
+                    <img src="./img/microfonelogo.svg" alt="microfone em tons de roxo">
+                    <h2>QueridasTech</h2>
+                </div>
+                <h3>A comunicação do futuro já começou. <br> Você está pronto para ouvir?</h3>
+                <a href="#"><button>Comece a ouvir gratuitamente</button></a>
+                <div class="autopreenchimento"> 
+                    <input type="text" id="myInput" placeholder="Pesquise">
+                    <button type="button">Buscar</button>
+                </div>
+            </div>
+            <div class="end-focus">
+                <a href="#"><button>Veja mais episódidos</button></a>
+            </div>
+            <div class="legal-term">
+                <p>Copyright©. Todos os direitos reservados.</p>
+            </div>
+        </article>
+        <article class="list-tracks">
+            <div class="offer-text">
+                <h2>Mergulhe no universo tecnológico com o <br><span>QueridasTech!</span></h2>
+            </div>
+            <article class="music-list">
+                <div class="up-column">
+                </div>
+                <div class="dow-column"></div>
+                <div class="up-column"></div>
+                <div class="dow-column"></div>
+            </article>
+        </article>
+    </div>
+    
+    
+    <script src="./autocomplete.js"></script>
+    <script src="./box-track.js"></script>
+</body>
+
+<style>
+    .btn{
+        background-color: #d9d9d9;
+        padding: 8px 15px; 
+        font-family: 'Montserrat';
+        border: none;
+        color: #3C0F76;
+        border-radius: 20px;
+        width: 8rem;
+    }
+
+    .btn:hover{
+        background-color: #8464ae5f;
+        color: white;
+        transition: 0.3s ease;
+    }
+</style>
+</html>
