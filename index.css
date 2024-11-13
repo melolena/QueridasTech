@@ -38,6 +38,8 @@
         font-family: 'Montserrat';
     } 
 
+/*corpo*/
+
     .logo{
         display: flex;
         align-items: center;
@@ -65,7 +67,8 @@
         background-color: #8464ae76;
         top: 0;
         max-height: 800px;
-        height:630px
+        height:630px;
+        width: 100%;
         
     }
 
