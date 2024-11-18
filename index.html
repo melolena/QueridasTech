@@ -13,40 +13,34 @@
 <body>
     <header class="p-3">
         <div class="container">
-          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">    
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-              <li><a href="./index.html" class="nav-link px-2 text-white nav-txt">Início</a></li>
-              <li><a href="./pages/explore/explore.html" class="nav-link px-2  nav-txt">Explore</a></li>
-              <li><a href="#" class="nav-link px-2 nav-txt">Nosso Time</a></li>
-            </ul>
-            <div class="text-end">
-              <button type="button" class="btn me-2 button-nav">Login</button>
-              <button type="button" class="btn  button-nav">Sign-up</button>
-            </div>
-          </div>
+            <header class="">
+                <div class="container d-flex align-items-center justify-content-between">
+                    <!-- Menu à esquerda -->
+                    <img src="./img/microfonelogo.svg" alt="">
+                    <ul class="nav col-lg-auto me-auto mb-md-0">
+                        <li><a href="./index.html" class="nav-link text-white nav-txt">Início</a></li>
+                        <li><a href="./pages/explore/explore.html" class="nav-link nav-txt">Explore</a></li>
+                        <li><a href="#" class="nav-link nav-txt">Nosso Time</a></li>
+                    </ul>
+            
+                    <!-- Campo de busca centralizado -->
+                    <form class="d-flex mx-auto md-3 form" style="flex-grow: 1; max-width: 300px;">
+                        <input class="form-control input-form" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn-form btn-outline-success" type="submit">Search</button>
+                    </form>
+            
+                    <!-- Botões à direita -->
+                    <div class="text-end">
+                        <button type="button" class="btn me-2 button-nav">Login</button>
+                        <button type="button" class="btn button-nav">Sign-up</button>
+                    </div>
+                </div>
+            </header>
+            
+            
         </div>
     </header>
     <div class="body-home">
-        <article class="focus">
-            <div class="body-focus">
-                <div class="logo">
-                    <img src="./img/microfonelogo.svg" alt="microfone em tons de roxo">
-                    <h2>QueridasTech</h2>
-                </div>
-                <h3>A comunicação do futuro já começou. <br> Você está pronto para ouvir?</h3>
-                <a href="#list-tracks"><button>Comece a ouvir gratuitamente</button></a>
-                <div class="autopreenchimento"> 
-                    <input type="text" id="myInput" placeholder="Pesquise">
-                    <button type="button">Buscar</button>
-                </div>
-            </div>
-            <div class="end-focus">
-                <a href="#"><button>Veja mais episódidos</button></a>
-            </div>
-            <div class="legal-term">
-                <p>Copyright©. Todos os direitos reservados.</p>
-            </div>
-        </article>
         <article class="list-tracks" id="list-tracks">
             <div class="offer-text">
                 <h2>Mergulhe no universo tecnológico com o <br><span>QueridasTech!</span></h2>
@@ -85,6 +79,38 @@
 
     .nav-txt{
         font-size: clamp(1.2rem, 1vw, 1rem);
+        color: #3C0F76;
+        font-family: 'Montserrat';
     }
+
+    .nav-txt:hover{
+        color: white;
+    }
+
+    .btn-form{
+        border-radius: 0 20px 20px 0;
+        border: none;
+        padding: 0 10px;
+        background-color: #3C0F76;
+        color: white;
+    }
+
+    .btn-form:hover{
+        background-color: #8464ae5f;
+
+    }
+
+    .input-form{
+        border-radius: 20px 0px 0px  20px;
+    }
+
+    input.form-control.input-form{
+        background-color: none;
+    }
+
+
+
+
+
 </style>
 </html>

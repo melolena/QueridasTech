@@ -19,11 +19,14 @@
         box.innerHTML = `
             <img src="${episode.image}" alt="${episode.title}" class="box-image">
             <div class="box-content">
-                <h5>${episode.title}</h5>
-                <p>${episode.description}</p>
-                <audio controls class="box-audio">
-                    <source src="${episode.audio}" type="audio/mpeg">
-                </audio>
+                <div class="title-box">
+                    <p>${episode.title}, ${episode.description}</p>
+                </div>
+                <div class="complement-box">
+                    <audio controls class="box-audio">
+                        <source src="${episode.audio}" type="audio/mpeg">
+                    </audio>
+                </div>
             </div>
         `;
 

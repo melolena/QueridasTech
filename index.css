@@ -15,21 +15,13 @@
         margin: 0;
     }
 
-
+    header img{
+        max-width: 80px;
+    }
         
     .p-3{
         background-color: #8464aed0;
         color: #3C0F76;
-    }
-
-    a.nav-link.px-2{
-        color: #3C0F76;
-        font-family: 'Montserrat';
-    }
-
-    a.nav-link.px-2:hover{
-        color: white;
-        transition: 0.3s ease;
     }
 
     .button-nav{
@@ -37,6 +29,10 @@
         padding: 10px 15px; 
         font-family: 'Montserrat';
     } 
+
+    header form{
+        gap: 0;
+    }
 
 /*corpo*/
 
@@ -160,6 +156,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-top: 2rem;
         
     }
 
@@ -210,7 +207,8 @@
         background-color: #d9d9d9;
         border-radius: 20px;
         align-items: center;
-        gap: 10px;
+        gap: 5px;
+
         
 
     }
@@ -222,19 +220,24 @@
     }
 
 
-
-    .box h5 {
-        font-size: clamp(1rem, 1vw, 0.8rem);
-        font-weight: 400;
+    .title-box{
+        display: inline-block;
+        font-size: clamp(0.8rem, 1vw, 0.6rem);
+        font-family: 'Montserrat';
         text-align: justify;
-        display: -webkit-box;
-        -webkit-line-clamp: 1; /* Limita o texto a uma linha */
-        line-clamp: 1; /* Compatibilidade padrão */
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        
+        margin: 0 10px;
     }
+
+
+    .complement-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
 
     .box audio{
         max-width: 180px;
